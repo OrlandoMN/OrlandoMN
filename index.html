@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="image/icon.png">
+</head>
+<body>
+    <header class="header">
+        <h1>Portafolio</h1>
+        <nav>
+
+            <ul id="nav-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="header-stop" id="home">
+        <h1>Portafolio</h1>
+        <nav>
+
+            <ul id="nav-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" >
+        <section class="intro">
+            <img src="image/me2.jpg" class="profile-img">
+            <p style="font-size: 18px; line-height: 0.5rem;">¡Hola mundo! Mi nombre es</p>
+            <p style="font-size: 35px; line-height: 1.75rem;"><b>ORLANDO MENDOZA NIETO</b></p>
+            <p style="font-size: 18px; line-height: 1.2rem;"> y soy egresado de ingeniería en Sistemas Computacionales.</p>
+        </section>
+
+        <!------------------------------------Proyectos---------------------------------->
+        <section style="padding: 5% 0% 0% 0%;" id="projects">
+            <h1>PROYECTOS</h1>
+        </section>
+        <section class="projects" >
+            <div class="project" data-title="Acceso Itesi" data-description="Es un sistema de registro para el acceso/salida de los estudiantes y el personal de la institución Itesi Tarimoro." data-tools="Laravel">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <h3>Acceso Itesi</h3>
+            </div>
+            <div class="project" data-title="E-commerce ACC Corp." data-description="Es una tienda online enfocada en la venta de curso digitales en línea, desde la cual el usuario puede registrarse, adquirir y reproducir los cursos adquiridos desde el mismo sitio web." data-tools="Laravel">
+                <img src="image/ecommerce.png" alt="Proyecto 2">
+                <h3>E-commerce ACC Corp.</h3>
+            </div>
+        </section>
+        <section>
+            <h3 style="text-align: center;">PROYECTOS PERSONALES</h3>
+        </section>
+        <section class="projects">
+            <div class="project" data-title="Linterna - Min." data-description="Es una app para dispositivos móviles que tiene como única función utilizar el flash de la cámara como linterna, cabe resaltar que el objetivo de la app es ser una alternativa menos intrusiva, más ligera y simple de usar al no solicitar permisos adicionales, no acceder a ningún tipo de información del usuario ni mostrar publicidad." data-tools="Java">
+                <img class="img-popup" src="image/linterna.png" alt="Proyecto 3">
+                <h3>Linterna - Min.</h3>
+            </div>
+            <div class="project" data-title="Proyecto 4" data-description="Descripción del Proyecto 4." data-tools="Herramienta 1, Herramienta 2">
+                <img src="proyecto4.jpg" alt="Proyecto 4">
+                <h3>Proyecto 4</h3>
+            </div>
+        </section>
+    </div>
+    <!------------------------------------Sobre mí---------------------------------->
+    <div class="container" id="about">
+        <div class="about-me">
+            <section>
+                <h1>SOBRE MÍ</h1>
+                <p style="font-size: 18px;">Egresado de Ingeniería en Sistemas Computacionales con un fuerte deseo de ingresar al ámbito laboral y aplicar mis habilidades. Me caracterizo por ser una persona laboriosa y comprometida. Estoy en busca de una oportunidad que me permita ampliar mi experiencia profesional.</p>
+            </section>
+            <div class="row" style="justify-content: center;">
+                <div class="col-md-6">
+                    <h3>DESTREZAS</h3>
+                    <ul>
+                        <li class="out-dot" >Leguajes de programación: Java, JavaScript, C#, C++, Dart.</a></li>
+                        <li class="out-dot">Frameworks: Flutter, Laravel y Angular.</a></li>
+                        <li class="out-dot">Tecnologías de desarrollo WEB: HTML, CSS y PHP.</a></li>
+                        <li class="out-dot">Gestores de bases de datos: MySQL, Microsoft SQL Server y SQLite.</a></li>
+                        <li class="out-dot">Software: Adobe Photoshop, AutoCAD, Cura, Inkscape, MasterCam, CorelDRAW.</a></li>
+                        <li class="out-dot">Idiomas: Español (nativo), ingles (nivel B1).</a></li>
+                        <li class="out-dot">Software: Adobe Photoshop, AutoCAD, Cura, Inkscape, MasterCam, CorelDRAW.</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6" >
+                    <h3>HABILIDADES BLANDAS</h3>
+                    <ul>
+                        <li class="out-dot">Comunicación efectiva.</a></li>
+                        <li class="out-dot">Trabajo en equipo.</a></li>
+                        <li class="out-dot">Resolución de problemas.</a></li>
+                        <li class="out-dot">Responsabilidad.</a></li>
+                        <li class="out-dot">Creatividad.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------Pie de pagina---------------------------------->
+    <footer id="contact">
+        <p>Contacto: omn76231@gmail.com</p>
+        <p>Sígueme en mis redes sociales: 
+            <a href="https://twitter.com/tuusuario" target="_blank">Twitter</a> | 
+            <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <ul id="modal-tools"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
